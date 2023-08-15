@@ -1,0 +1,32 @@
+---
+interface Props {
+  rol: any;
+}
+const { rol } = Astro.props;
+---
+
+<div
+  role={rol}
+  class="hidden flex-col gap-4 absolute right-0 left-0 top-16 bg-amber-400 shadow-xl text-center p-6 text-lg items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full"
+>
+  <a
+    href="/HomeSmart/"
+    class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors"
+    >Home
+  </a>
+  <a
+    href="/HomeSmart/"
+    class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors lg:mr-auto"
+    >Contact
+  </a>
+  <a
+    href="/HomeSmart/"
+    class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors"
+    >Login
+  </a>
+  <a
+    href=""
+    class="py-2 px-6 bg-teal-900 text-white shadow-xl hover:shadow-none dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400 transition-shadow"
+    >Sign Up</a
+  >
+</div>

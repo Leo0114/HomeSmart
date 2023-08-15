@@ -7,8 +7,16 @@ interface Props {
   calidad?: string;
   alt: string;
   ImgClass?: string;
+  ancho?: number;
 }
-const { img, calidad = "mid", alt, ImgClass } = Astro.props;
+const { img, calidad = "mid", alt, ImgClass, ancho } = Astro.props;
 ---
 
-<Image src={img} quality={calidad} format="avif" alt={alt} class={ImgClass} />
+<Image
+  src={img}
+  quality={calidad}
+  format="avif"
+  alt={alt}
+  class={ImgClass}
+  width={ancho}
+/>
