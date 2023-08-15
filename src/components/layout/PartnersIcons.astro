@@ -1,0 +1,29 @@
+---
+import partner1 from "@assets/partner1.svg";
+import partner2 from "@assets/partner2.svg";
+import partner3 from "@assets/partner3.svg";
+import partner4 from "@assets/partner4.svg";
+import partner5 from "@assets/partner5.svg";
+import partner6 from "@assets/partner6.svg";
+import partner7 from "@assets/partner7.svg";
+const partners = [
+  { path: partner1 },
+  { path: partner2 },
+  { path: partner3 },
+  { path: partner4 },
+  { path: partner5 },
+  { path: partner6 },
+  { path: partner7 },
+];
+import Imagen from "@components/layout/Imagen.astro";
+---
+
+<div class="flex flex-wrap justify-center gap-8 md:gap-x-16 max-w-2xl mx-auto">
+  {
+    partners.map((part) => (
+      <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+        <Imagen alt="Partners" img={part.path} ImgClass="h-16 w-16" />
+      </div>
+    ))
+  }
+</div>¿

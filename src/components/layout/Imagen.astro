@@ -8,8 +8,9 @@ interface Props {
   alt: string;
   ImgClass?: string;
   ancho?: number;
+  hiden?: boolean;
 }
-const { img, calidad = "mid", alt, ImgClass, ancho } = Astro.props;
+const { img, calidad = "mid", alt, ImgClass, ancho, hiden } = Astro.props;
 ---
 
 <Image
@@ -19,4 +20,5 @@ const { img, calidad = "mid", alt, ImgClass, ancho } = Astro.props;
   alt={alt}
   class={ImgClass}
   width={ancho}
+  aria-hidden={hiden}
 />
