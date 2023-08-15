@@ -1,8 +1,9 @@
 ---
 import Navbar from "@components/Navbar.astro";
 import Header from "@components/Header.astro";
-import Card from "@components/Cards.astro";
+import Cards from "@components/Cards.astro";
 import MainHead from "@layouts/MainHead.astro";
+import Form from "@components/Form.astro";
 ---
 
 <!DOCTYPE html>
@@ -13,7 +14,8 @@ import MainHead from "@layouts/MainHead.astro";
   >
     <Navbar />
     <Header />
-    <Card />
+    <Cards />
+    <Form />
     <slot />
   </body>
 </html>

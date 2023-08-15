@@ -1,0 +1,46 @@
+---
+import Imagen from "@components/layout/Imagen.astro";
+import lamp from "@assets/lamp.webp";
+import app from "@assets/app.svg";
+import Formulario from "@components/layout/Formulario.astro";
+---
+
+<section aria-label="contact" class="container mx-auto px-8 overflow-hidden">
+  <div class="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20">
+    <div class="md:flex-1 md:max-w-sm relative">
+      <Imagen alt="Lamp" ImgClass="mx-auto" img={lamp} />
+      <a
+        href=""
+        class="w-max py-2 px-6 bg-amber-400 dark:text-neutral-900 shadow-xl hover:shadow-none mx-auto mt-12 md:mb-12 flex gap-2 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-offset-neutral-800 dark:ring-amber-400 transition-all"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+          ></path>
+        </svg>
+
+        <span>Download the App</span>
+      </a>
+      <Imagen img={app} ImgClass="" alt="App" ancho={240} />
+      <div
+        class="absolute -bottom-18 -z-10 left-1/2 -translate-x-1/2 aspect-square md:border-8 border-amber-400 rounded-full md:w-72 lg:w-96"
+      >
+      </div>
+    </div>
+    <Formulario />
+  </div>
+</section>
+
+<div
+  class="hidden md:block drop-shadow-xl absolute left-1/2 -translate-x-1/2 max-w-16 xl:max-w-xs"
+>
+</div>
