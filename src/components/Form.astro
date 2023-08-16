@@ -6,7 +6,7 @@ import Formulario from "@components/layout/Formulario.astro";
 ---
 
 <section aria-label="contact" class="container mx-auto px-8 overflow-hidden">
-  <div class="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20" >
+  <div class="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20">
     <div class="md:flex-1 md:max-w-sm relative">
       <Imagen alt="Lamp" ImgClass="mx-auto" img={lamp} />
       <a
@@ -30,7 +30,12 @@ import Formulario from "@components/layout/Formulario.astro";
 
         <span>Download the App</span>
       </a>
-      <Imagen img={app} ImgClass="" alt="App" ancho={240} />
+      <Imagen
+        img={app}
+        ImgClass="hidden md:block drop-shadow-xl absolute left-1/2 -translate-x-1/2 max-w-16 xl:max-w-xs"
+        alt="App"
+        ancho={240}
+      />
       <div
         class="absolute -bottom-18 -z-10 left-1/2 -translate-x-1/2 aspect-square md:border-8 border-amber-400 rounded-full md:w-72 lg:w-96"
       >
@@ -39,8 +44,3 @@ import Formulario from "@components/layout/Formulario.astro";
     <Formulario />
   </div>
 </section>
-
-<div
-  class="hidden md:block drop-shadow-xl absolute left-1/2 -translate-x-1/2 max-w-16 xl:max-w-xs"
->
-</div>
